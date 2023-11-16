@@ -11,7 +11,7 @@ namespace TicTacToe
         static void Main(string[] args)
         {
             char[] board = new char[] { '?', '?', '?', '?', '?','?', '?', '?', '?' };
-            int numOfPlays = 1;
+            int numOfPlays = 0;
             char player;
             int index;
 
@@ -81,7 +81,7 @@ namespace TicTacToe
                      board[2] == board[1] && board[1] == board[0] && board[2] != '?' || board[0] == board[3] && board[3] == board[6] && board[0] != '?' ||
                      board[1] == board[4] && board[4] == board[7] && board[1] != '?' || board[2] == board[5] && board[5] == board[8] && board[2] != '?'))
                     {
-                    Console.WriteLine(player +" has won the game! Times played: "+(numOfPlays-1));
+                    Console.WriteLine(player +" has won the game! Times played: "+(numOfPlays));
                     break;
                 }
 
