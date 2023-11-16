@@ -84,6 +84,11 @@ namespace TicTacToe
                     Console.WriteLine(player +" has won the game! Times played: "+(numOfPlays));
                     break;
                 }
+                if (numOfPlays == 9)
+                {
+                    Console.WriteLine("It's a tie, noobs.");
+                    break;
+                }
 
                     
 
